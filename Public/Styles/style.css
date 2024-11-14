@@ -1,0 +1,491 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Ga+Maamli&family=Great+Vibes&family=Handjet:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Ga+Maamli&family=Great+Vibes&family=Handjet:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.accueil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../img/JavaScript.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.accueil::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.747);
+  z-index: 1;
+}
+
+.contenu-accueil {
+  position: relative;
+  z-index: 2;
+}
+
+.contenu-accueil h1 {
+  font-size: 4.1rem;
+  margin-bottom: 0.8rem;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+.contenu-accueil p {
+  font-size: 1.5rem;
+  margin-bottom: 2.8rem;
+  font-family: Poppins, sans-serif;
+}
+
+.btn {
+  background: #007bff;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.apropos {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.apropos h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+  font-family: "Ga Maamli", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.apropos p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+}
+
+.grille-apropos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.apropos-item {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.apropos-item:hover {
+  transform: scale(1.05);
+  transition: all 1.09s;
+}
+
+.apropos-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.projets {
+  padding: 3rem 2rem;
+  background-color: #f0f4f8;
+}
+
+.projets h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2.9rem;
+  font-family: "Ga Maamli", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grille-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.projet-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.projet-item:hover {
+  transform: scale(1.01);
+  transition: all 1.09s;
+}
+
+.projet-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.projet-item h3 {
+  font-size: 1rem;
+  color: #333;
+  font-family: Poppins, sans-serif;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.projet-item a {
+  color: #0077b5;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.competences {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.competences h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: "Ga Maamli", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grille-competences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.competence-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  padding: 2rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.competence-item h3 {
+  font-weight: 700;
+}
+
+.competence-item p {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.competence-item:hover {
+  transform: scale(1.01);
+  transition: 0.5s ease-in-out;
+}
+
+.competence-item i {
+  font-size: 10rem;
+  margin-bottom: 2rem;
+}
+
+.temoignages {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f0f4f8;
+}
+
+.temoignages h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: "Ga Maamli", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grille-temoignages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.temoignages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 2rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.temoignages-item h4 {
+  font-weight: 700;
+}
+
+.temoignages-item p {
+  font-family: Poppins, sans-serif;
+  text-align: justify;
+  margin-bottom: 1rem;
+  user-select: all;
+  font-size: 0.9rem;
+}
+
+.temoignages-item img {
+  max-width: 35%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.icon-html5 {
+  color: #e44d26;
+}
+
+.icon-css3 {
+  color: #1572b6;
+}
+
+.icon-javascript {
+  color: #f7df1e;
+}
+
+.icon-nodejs {
+  color: #68a063;
+}
+
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2.2rem;
+  text-transform: uppercase;
+  font-family: "Ga Maamli", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+#formulaire-contact {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#formulaire-contact input,
+#formulaire-contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  resize: none;
+}
+
+#formulaire-contact textarea {
+  min-height: 160px;
+}
+
+#formulaire-contact button {
+  align-self: center;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#formulaire-contact button:hover {
+  background: #0056b3;
+}
+
+footer {
+  background: #333;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 13px;
+}
+
+.reseaux-sociaux {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.reseaux-sociaux a {
+  margin: 0 15px;
+  font-size: 30px;
+  transition: transform 0.3s;
+}
+
+.reseaux-sociaux a[href*="facebook"] i {
+  color: #01b3fa;
+}
+
+.reseaux-sociaux a[href*="instagram"] i {
+  color: #c13584;
+}
+
+.reseaux-sociaux a[href*="linkedin"] i {
+  color: #0077b5;
+}
+
+.reseaux-sociaux a[href*="github"] i {
+  color: #fff;
+}
+
+.reseaux-sociaux a[href*="wa.me"] i {
+  color: #25d366;
+}
+
+.reseaux-sociaux a:hover i {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .contenu-accueil h1 {
+    font-size: 2rem;
+  }
+
+  .contenu-accueil p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  header nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .contenu-accueil h1 {
+    font-size: 2.7rem;
+  }
+
+  .grille-apropos,
+  .grille-competences,
+  .grille-projets {
+    grid-template-columns: 1fr;
+  }
+
+  .apropos p {
+    font-size: 0.7rem;
+  }
+
+  .competence-item {
+    width: 100%;
+  }
+
+  #formulaire-contact {
+    padding: 1rem;
+  }
+
+  #formulaire-contact input,
+  #formulaire-contact textarea {
+    font-size: 0.9rem;
+  }
+
+  .reseaux-sociaux a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenu-accueil h1 {
+    font-size: 1.8rem;
+  }
+
+  .contenu-accueil p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  .reseaux-sociaux a {
+    font-size: 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
